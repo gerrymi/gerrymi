@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  height: 100%;
+  display: block;
+  font-size: 20px;
+  background-color: #ddd;
+}
+h1 {
+  font-size: 3em; /* 48 / 16 */
+  line-height: 1em; /* 48 / 48 */
+  margin-bottom: .5em; /* 24 / 48 */
+  font-family: "league-gothic"
+}
+h2 {
+  font-size: 2.25em; /* 36 / 16 */
+  line-height: 1.333333333333333em; /* 48 / 36 */
+  margin-bottom: .6666666666666667em; /* 24 / 36 */
+  font-family: "league-gothic"
+}
+h3 {
+  font-size: 1.5em; /* 24 / 16 */
+  line-height: 1em; /* 24 / 24 */
+  margin-bottom: 1em; /* 24 / 24 */
+  font-family: "league-gothic"
+}
+h4 {
+  font-size: 1.3125em; /* 21 / 16 */
+  line-height: 1.142857142857143em; /* 24 / 21 */
+  margin-bottom: 1.142857142857143em; /* 24 / 21 */
+  font-family: "league-gothic"
+}
+h5 {
+  font-size: 1.125em; /* 18 / 16 */
+  line-height: 1.333333333333333em; /* 24 / 18 */
+  margin-bottom: 1.333333333333333em; /* 24 / 18 */
+  font-family: "league-gothic"
+}
+h6 {
+  font-size: 1em; /* 16 / 16 */
+  line-height: 1.5em; /* 24 / 16 */
+  margin-bottom: 1.5em; /* 24 / 16 */
+  font-family: "league-gothic"
+}
+p {
+  font-size: 1em; /* 16 / 16 */
+  line-height: 1.5em; /* 24 / 16 */
+  margin-bottom: 1.5em; /* 24 / 16 */
+  font-family: "adobe-caslon-pro"
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+/* Top Level Containers */
+nav, #header, #work, #process, #footer {
+  width: 100%;
+  overflow: hidden;
+}
+#header {
+  background-image: url(/public/img/header.jpg);
+  background-position: center 80%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 600px;
+}
+#work {
+  padding: 50px 0; 
+  background-image: url(/public/img/geometry2.png);
+  min-height: 100vh;
+}
+#process {
+  background-image: url(/public/img/wood_pattern.png);
+  padding-top: 50px;
+  background-color: #fc0;
+}
+#footer {
+  padding-top: 25px;
+  background-color: #333;
+}
+/* Naviation */
+.main-nav {
+  position: absolute;
+  top: 50px;
+  z-index: 50;
+}
+.main-nav ul {
+  float: right;
+  margin: 1.5em 0 0;
+}
+.main-nav ul li {
+  list-style-type: none;
+  float: left;
+  display: block;
+  margin: 0 15px;
+}
+a.logo {
+  font-size: 5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Inner Wrappers */
+.wrapper {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: auto;
+}
+.mid-y {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+.mid-y-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+}
+.hero h1 {
+  font-size: 5em;
+}
+
+/* Projects */
+.project {
+  height: 140px;
+  margin-bottom: 45px;
+  text-align: center;
+  overflow: hidden;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.project-inner {
+  height: 140px;
+  background-color: rgba(0,0,0,0);
+  padding-top: 0px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.project:hover .project-inner {
+  background-color: rgba(0,0,0,.6);
+  padding-top: 50px;
+}
+.project h3 {
+  margin: 0;
+  color: rgba(255,255,255,0);
+}
+.project:hover h3 {
+  color: rgba(255,255,255,1);
+}
+.work h2 span {
+  font-family: "adobe-caslon-pro";
+  font-style: italic;
+  font-size: .5em;
+  color: #999;
+}
+.work h2, .work h3 {
+  margin: 0;
+}
+.work h3 span {
+  font-family: "adobe-caslon-pro";
+  font-size: .5em;
+  text-transform: uppercase;
+  color: #999;
+}
+.work p span {
+  color: #999;
+  display: block;
+}
+.work img {
+  width: 100%;
+  margin-bottom: 45px;
+}
+.hide {
+  display: none;
+}
+/* Footer */
+#footer h1, #footer ul {
+  margin-top: 0px;
+}
+
+/* Grid */
+.row {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  width: 1245px;
+  margin-left: -45px;
+}
+.fourth {
+  width: 288px;
+  margin-left: 45px;
+  float: left;
+}
+.third {
+  width: 370px;
+  margin-left: 45px;
+  float: left;
+}
+.third-x2 {
+  width: 785px;
+  margin-left: 45px;
+  float: left;
+}
+.half {
+  width: 577px;
+  margin-left: 45px;
+  float: left;
+}
