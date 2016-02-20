@@ -10,21 +10,15 @@
 					</div>
 					<div class="third-x2">
 						<img ng-src="/public/img/{{ proj.name }}_1.jpg" err-SRC alt="{{ proj.name }}">
-					</div>
-					<div class="third">
 						<img ng-src="/public/img/{{ proj.name }}_2.jpg" err-SRC alt="{{ proj.name }}">
-					</div>
-					<div class="third">
 						<img ng-src="/public/img/{{ proj.name }}_3.jpg" err-SRC alt="{{ proj.name }}">
-					</div>
-					<div class="third">
 						<img ng-src="/public/img/{{ proj.name }}_4.jpg" err-SRC alt="{{ proj.name }}">
-					</div>
-					<div class="third">
 						<img ng-src="/public/img/{{ proj.name }}_5.jpg" err-SRC alt="{{ proj.name }}">
+						<img ng-src="/public/img/{{ proj.name }}_6.jpg" err-SRC alt="{{ proj.name }}">
 					</div>
-					<div class="third">
-						<img src="/public/img/{{ proj.name }}_6.jpg" err-SRC alt="{{ proj.name }}">
+					<div class="full">
+						<a ng-show="projPrev.name" href="#projects/{{ projPrev.name }}">Previous</a><span ng-show="projPrev.name && projNext.name"> ||</span>
+						<a ng-show="projNext.name" href="#projects/{{ projNext.name }}">Next</a>
 					</div>
 				</div>
 			</div>

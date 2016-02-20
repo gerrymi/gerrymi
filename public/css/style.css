@@ -66,7 +66,6 @@ nav, #header, #work, #process, #footer {
 #work {
   padding: 50px 0; 
   background-image: url(/public/img/geometry2.png);
-  min-height: 100vh;
 }
 #process {
   background-image: url(/public/img/wood_pattern.png);
@@ -94,7 +93,7 @@ nav, #header, #work, #process, #footer {
   margin: 0 15px;
 }
 a.logo {
-  font-size: 5em;
+  font-size: 1em;
   font-weight: bold;
   margin: 0;
 }
@@ -174,15 +173,20 @@ a.logo {
   color: #999;
 }
 .work p span {
+  font-size: .7em;
+  font-weight: bold;
   color: #999;
   display: block;
 }
 .work img {
   width: 100%;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
 }
 .hide {
   display: none;
+}
+.work .full {
+  border-top: 1px dashed #999;
 }
 /* Footer */
 #footer h1, #footer ul {
@@ -214,6 +218,11 @@ a.logo {
 }
 .half {
   width: 577px;
+  margin-left: 45px;
+  float: left;
+}
+.full {
+  width: 1200px;
   margin-left: 45px;
   float: left;
 }

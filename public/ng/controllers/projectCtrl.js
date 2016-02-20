@@ -54,6 +54,22 @@ var projects = [
     "deliverables": ["web layout", "video prototype"],
     "shortDesc": "Web photography portfolio with minimal type usage to maximize photo visibility.",
     "description": "Named after Peter Parker, the fictional photographer from the Marvel universe, this web portfolio was built to feature photography as simply as possible, ridding the page of unnecessary type. Only vital information is left, leaving the photos to speak for themselves."
+  },
+  {
+    "name": "ghost-media",
+    "title": "Ghost Media",
+    "categories": ["web-design"],
+    "deliverables": ["web layout"],
+    "shortDesc": "A simple self-commissioned single-page layout for digital marketing agency.",
+    "description": "A simple self-commissioned single-page layout for digital marketing agency."
+  },
+  {
+    "name": "happy-feet-imaging",
+    "title": "Happy Feet Imaging",
+    "categories": ["web-design"],
+    "deliverables": ["web layout"],
+    "shortDesc": "Another self-commissioned layout, this time for high-end sonography company featuring 4D imaging.",
+    "description": "Another self-commissioned layout, this time for high-end sonography company featuring 4D imaging."
   }
 ];
 
@@ -64,6 +80,8 @@ app.controller('projectCtrl',['$scope', '$routeParams', function($scope, $routeP
     for (var i = 0;i<projects.length;i++) {
       if ($routeParams.name == projects[i].name) {
         $scope.proj = projects[i];
+        $scope.projPrev = projects[i-1];
+        $scope.projNext = projects[i+1];
       }
     }
 }]);
