@@ -3,7 +3,7 @@ body {
   height: 100%;
   display: block;
   font-size: 20px;
-  background-color: #ddd;
+  background-color: #333;
 }
 h1 {
   font-size: 3em; /* 48 / 16 */
@@ -64,8 +64,14 @@ nav, #header, #work, #process, #footer {
   height: 600px;
 }
 #work {
-  padding: 50px 0; 
+  padding: 50px 0 135px;
   background-image: url(/public/img/geometry2.png);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+#work.home {
+  height: 100vh;
 }
 #process {
   background-image: url(/public/img/wood_pattern.png);
@@ -84,7 +90,7 @@ nav, #header, #work, #process, #footer {
 }
 .main-nav ul {
   float: right;
-  margin: 1.5em 0 0;
+  margin: 0;
 }
 .main-nav ul li {
   list-style-type: none;
@@ -102,7 +108,6 @@ a.logo {
 .wrapper {
   height: 100%;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   overflow: auto;
@@ -122,7 +127,8 @@ a.logo {
   text-align: center;
 }
 .hero h1 {
-  font-size: 5em;
+  font-size: 8em;
+  margin: 0;
 }
 
 /* Projects */
@@ -186,7 +192,18 @@ a.logo {
   display: none;
 }
 .work .full {
+  margin-top: 45px;
   border-top: 1px dashed #999;
+}
+.work .full.prev-next {
+  text-align: right;
+}
+.work .full.prev-next a {
+  font-family: "league-gothic";
+  text-transform: uppercase;
+}
+.work .full.prev-next span {
+  margin: 0 .5em; 
 }
 /* Footer */
 #footer h1, #footer ul {
@@ -194,35 +211,91 @@ a.logo {
 }
 
 /* Grid */
-.row {
-  position: relative;
-  overflow: hidden;
-  clear: both;
-  width: 1245px;
-  margin-left: -45px;
+@media (min-width: 300px) {
+  nav, #header, #work, #process, #footer {
+    width: 94%;
+    overflow: hidden;
+    padding: auto 3%; 
+  }
+  .row  {
+    width: 100%;
+  }
 }
-.fourth {
-  width: 288px;
-  margin-left: 45px;
-  float: left;
+@media (min-width: 960px) {
+  nav, #header, #work, #process, #footer {
+    width: 100%;
+    overflow: hidden;
+  }
+  .wrapper {
+    max-width: 960px;
+  }
+  .row {
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    width: 1005px;
+    margin-left: -45px;
+  }
+  .fourth {
+    width: 195px;
+    margin-left: 45px;
+    float: left;
+  }
+  .third {
+    width: 275px;
+    margin-left: 45px;
+    float: left;
+  }
+  .third-x2 {
+    width: 595px;
+    margin-left: 45px;
+    float: left;
+  }
+  .half {
+    width: 435px;
+    margin-left: 45px;
+    float: left;
+  }
+  .full {
+    width: 1200px;
+    margin-left: 45px;
+    float: left;
+  }  
 }
-.third {
-  width: 370px;
-  margin-left: 45px;
-  float: left;
-}
-.third-x2 {
-  width: 785px;
-  margin-left: 45px;
-  float: left;
-}
-.half {
-  width: 577px;
-  margin-left: 45px;
-  float: left;
-}
-.full {
-  width: 1200px;
-  margin-left: 45px;
-  float: left;
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+  .row {
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    width: 1245px;
+    margin-left: -45px;
+  }
+  .fourth {
+    width: 288px;
+    margin-left: 45px;
+    float: left;
+  }
+  .third {
+    width: 370px;
+    margin-left: 45px;
+    float: left;
+  }
+  .third-x2 {
+    width: 785px;
+    margin-left: 45px;
+    float: left;
+  }
+  .half {
+    width: 577px;
+    margin-left: 45px;
+    float: left;
+  }
+  .full {
+    width: 1200px;
+    margin-left: 45px;
+    float: left;
+  }  
 }

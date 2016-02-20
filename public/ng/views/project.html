@@ -16,8 +16,8 @@
 						<img ng-src="/public/img/{{ proj.name }}_5.jpg" err-SRC alt="{{ proj.name }}">
 						<img ng-src="/public/img/{{ proj.name }}_6.jpg" err-SRC alt="{{ proj.name }}">
 					</div>
-					<div class="full">
-						<a ng-show="projPrev.name" href="#projects/{{ projPrev.name }}">Previous</a><span ng-show="projPrev.name && projNext.name"> ||</span>
+					<div class="full prev-next">
+						<a ng-show="projPrev.name" href="#projects/{{ projPrev.name }}">Previous</a><span ng-show="projPrev.name && projNext.name"> •</span>
 						<a ng-show="projNext.name" href="#projects/{{ projNext.name }}">Next</a>
 					</div>
 				</div>
