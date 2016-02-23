@@ -1,0 +1,28 @@
+<div id="work">
+	<div class="wrapper">
+		<div class="mid-y">
+			<div class="mid-y-inner">
+				<div class="row work">
+					<div class="third">
+						<h2>{{ proj.title }}<span ng-repeat="c in proj.categories"> {{ c }}</span></h2>
+						<h3><span ng-repeat="d in proj.deliverables">{{ d }} </span></h3>
+						<p>{{ proj.description }}<span>#{{ currentProj }}</span></p>
+					</div>
+					<div class="third-x2">
+						<img ng-src="/public/img/{{ proj.name }}_1.jpg" err-SRC alt="{{ proj.name }}">
+						<img ng-src="/public/img/{{ proj.name }}_2.jpg" err-SRC alt="{{ proj.name }}">
+						<img ng-src="/public/img/{{ proj.name }}_3.jpg" err-SRC alt="{{ proj.name }}">
+						<img ng-src="/public/img/{{ proj.name }}_4.jpg" err-SRC alt="{{ proj.name }}">
+						<img ng-src="/public/img/{{ proj.name }}_5.jpg" err-SRC alt="{{ proj.name }}">
+						<img ng-src="/public/img/{{ proj.name }}_6.jpg" err-SRC alt="{{ proj.name }}">
+					</div>
+					<div class="full prev-next">
+						<a ng-show="projPrev.name" href="#projects/{{ projPrev.name }}">Previous</a><span ng-show="projPrev.name && projNext.name"> •</span>
+						<a ng-show="projNext.name" href="#projects/{{ projNext.name }}">Next</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

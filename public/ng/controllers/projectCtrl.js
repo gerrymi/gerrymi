@@ -40,6 +40,14 @@ var projects = [
     "description": "A collection of design essays exploring L.A.’s design scene written by Cal State L.A.’s design students bound in a book to organize the various design events that comprise the collection of essays."
   },
   {
+    "name": "irene-and-cris",
+    "title": "Irene + Cris",
+    "categories": ["wedding-coverage"],
+    "deliverables": ["photography", "cinematography"],
+    "shortDesc": "An intimate wedding by a cliff filled with the love of family and friends.",
+    "description": "Irene and Cris' wedding!"
+  },
+  {
     "name": "joe-cooper",
     "title": "Joe Cooper",
     "categories": ["web-design"],
