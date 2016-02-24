@@ -1,26 +1,51 @@
-<div id="work">
-	<div class="wrapper">
-		<div class="mid-y">
-			<div class="mid-y-inner">
-				<div class="row work">
-					<div class="third">
-						<h2>{{ proj.title }}<span ng-repeat="c in proj.categories"> {{ c }}</span></h2>
-						<h3><span ng-repeat="d in proj.deliverables">{{ d }} </span></h3>
-						<p>{{ proj.description }}<span>#{{ currentProj }}</span></p>
-					</div>
-					<div class="third-x2">
-						<img ng-src="/public/img/{{ proj.name }}_1.jpg" err-SRC alt="{{ proj.name }}">
-						<img ng-src="/public/img/{{ proj.name }}_2.jpg" err-SRC alt="{{ proj.name }}">
-						<img ng-src="/public/img/{{ proj.name }}_3.jpg" err-SRC alt="{{ proj.name }}">
-						<img ng-src="/public/img/{{ proj.name }}_4.jpg" err-SRC alt="{{ proj.name }}">
-						<img ng-src="/public/img/{{ proj.name }}_5.jpg" err-SRC alt="{{ proj.name }}">
-						<img ng-src="/public/img/{{ proj.name }}_6.jpg" err-SRC alt="{{ proj.name }}">
-					</div>
-					<div class="full prev-next">
-						<a ng-show="projPrev.name" href="#projects/{{ projPrev.name }}">Previous</a><span ng-show="projPrev.name && projNext.name"> •</span>
-						<a ng-show="projNext.name" href="#projects/{{ projNext.name }}">Next</a>
+<header id="header">
+	<div class="row">
+		<div class="wrapper">
+			<div class="mid-y">
+				<div class="mid-y-inner">
+					<div class="full">
+						<div class="hero">
+							<h2>{{ proj.title }}<span ng-repeat="c in proj.categories"> {{ c }}</span></h2>
+							<h3><span ng-repeat="d in proj.deliverables">{{ d }} </span></h3>
+							<div class="half">
+								<p>{{ proj.description }}<span>#{{ currentProj }}</span></p>
+							</div>
+						</div>
 					</div>
 				</div>
+			</div>
+		</div>	
+	</div>
+</header>
+<div id="work">
+	<div class="row">
+		<div class="full project-feature">
+			<img ng-src="/public/img/{{ proj.name }}/{{ proj.name }}_1.jpg" err-SRC alt="{{ proj.name }}">
+			<img ng-src="/public/img/{{ proj.name }}/{{ proj.name }}_2.jpg" err-SRC alt="{{ proj.name }}">
+			<img ng-src="/public/img/{{ proj.name }}/{{ proj.name }}_3.jpg" err-SRC alt="{{ proj.name }}">
+			<img ng-src="/public/img/{{ proj.name }}/{{ proj.name }}_4.jpg" err-SRC alt="{{ proj.name }}">
+			<img ng-src="/public/img/{{ proj.name }}/{{ proj.name }}_5.jpg" err-SRC alt="{{ proj.name }}">
+			<img ng-src="/public/img/{{ proj.name }}/{{ proj.name }}_6.jpg" err-SRC alt="{{ proj.name }}">
+			<img ng-src="/public/img/{{ proj.name }}/{{ proj.name }}_7.jpg" err-SRC alt="{{ proj.name }}">
+			<img ng-src="/public/img/{{ proj.name }}/{{ proj.name }}_8.jpg" err-SRC alt="{{ proj.name }}">
+			<img ng-src="/public/img/{{ proj.name }}/{{ proj.name }}_9.jpg" err-SRC alt="{{ proj.name }}">			
+		</div>
+		<div class="wrapper">
+			<div class="half prev-next">
+				<a ng-show="projPrev.name" href="#projects/{{ projPrev.prefix }}{{ projPrev.name }}">
+					<div class="prev-inner">
+						<h5><small>Previous Project:</small></h5>
+						<h4>{{ projPrev.title }}</h4>
+					</div>
+				</a>
+			</div>
+			<div class="half prev-next">
+				<a ng-show="projNext.name" href="#projects/{{ projNext.prefix }}{{ projNext.name }}">
+					<div class="next-inner">
+						<h5><small>Next Project:</small></h5>
+						<h4>{{ projNext.title }}</h4>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>

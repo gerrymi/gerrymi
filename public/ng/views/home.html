@@ -1,15 +1,29 @@
-<div id="work">
-	<div class="wrapper">
-		<div class="mid-y">
-			<div class="mid-y-inner">
-				<div class="row">
-					<div class="project third" ng-repeat="project in projects" style="background-image: url(/public/img/{{ project.name }}_thumb.jpg);">
-						<a href="#projects/{{ project.name }}">
-							<div class="project-inner"><h3>{{ project.title }}</h3></div>
-						</a>
-					</div>
+<header id="header" class="home">
+	<div class="row">
+		<div class="wrapper">
+			<div class="mid-y">
+				<div class="mid-y-inner">
+					<div class="hero">
+						<h1>HELLO!</h1>
+						<p>My name is Gerrymi, I'm here to tell your story.</p>
+					</div>	
 				</div>
 			</div>
+		</div>	
+	</div>
+</header>
+<div id="work">
+	<div class="row">
+		<div class="third" ng-repeat="project in projects">
+			<a class="project" href="#projects/{{ project.prefix }}{{ project.name }}">
+				<img ng-src="/public/img/{{ project.name }}/{{ project.name }}_thumb.jpg" alt="">
+				<div class="project-inner">
+					<div class="project-content">
+						<h2>{{ project.title }}</h2>
+						<p>{{ project.shortDesc }}</p>
+					</div>
+				</div>
+			</a>
 		</div>
 	</div>
 </div>

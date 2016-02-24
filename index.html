@@ -13,47 +13,44 @@
 	<link rel="stylesheet" href="/public/css/style.css">
 </head>
 <body ng-app="gerrymi">
-	<nav class="main-nav">
-		<div class="wrapper">
-			<a class="logo" href="/index.html">GB</a>
-<!-- 			<ul>
-				<li><a href="#/about">about</a></li>
-				<li><a href="#/work">work</a></li>
-				<li><a href="#/process">process</a></li>
-				<li><a href="#/contact">contact</a></li>
-			</ul> -->
-		</div>
-	</nav>
-	<header id="header">
-		<div class="wrapper">
-			<div class="mid-y">
-				<div class="mid-y-inner">
-					<div class="hero">
-						<h1>HELLO!</h1>
-						<p>Allow me to tell your story.</p>
-					</div>	
-				</div>
-			</div>
-		</div>	
-	</header>
-	<div ng-view data-autoscroll="false"></div>
-<!-- 	<div id="process">
-		
-	</div>
-	<footer id="footer">
-		<div class="wrapper">
-			<div class="row">
-				<div class="half">
-					<h1>Hello World!</h1>
-				</div>
-				<div class="half">
-					<div class="social">
-						
+	<nav class="main-nav" data-ng-controller="projectCtrl">
+		<div class="row">
+			<div class="wrapper">
+				<div class="fourth">
+					<div class="nav-inner">
+						<div class="logo">
+							<a href="/index.html">GB</a>
+						</div>
+						<ul>
+							<li ng-repeat="project in projects">
+								<a href="#projects/{{ project.prefix }}{{ project.name }}">{{ project.title }}</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-	</footer> -->
+	</nav>
+	<div ng-view data-autoscroll="true"></div>
+<!-- 	<div id="process">
+		
+	</div> -->
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="row">
+				<div class="third">
+					<p class="heading">contact</p>
+				</div>
+				<div class="third-x2">
+					<p class="text">Thank you for visiting! I'd love to know what you think of my work, <a href="mailto:hello@gerrymi.com">say hello!</a> Or check me out on
+					<a href="https://www.linkedin.com/in/gerrymi">LinkedIn</a>,
+					<a href="https://github.com/gerrymi">GitHub</a>,
+					<a href="https://www.instagram.com/gerrymi/">Instagram</a>,
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script src="/public/ng/app.js"></script>
 	<script src="/public/ng/controllers/projectCtrl.js"></script>
 </body>
