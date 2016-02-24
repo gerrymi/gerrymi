@@ -393,7 +393,7 @@ nav, #header, #work, #process, #footer {
     font-size: 1em;
   }
 }
-@media (min-width: 960px) {
+@media (min-width: 768px) {
   body {
     font-size: 24px;
   }
