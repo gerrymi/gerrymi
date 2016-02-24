@@ -63,23 +63,23 @@
 			<img ng-src="/public/img/{{ proj.name }}/{{ proj.name }}_24.jpg" alt="{{ proj.name }}">
 			<img ng-src="/public/img/{{ proj.name }}/{{ proj.name }}_25.jpg" alt="{{ proj.name }}">
 		</div>
-	</div>
-	<div class="wrapper">
-		<div class="half prev-next">
-			<a ng-show="projPrev.name" href="#projects/{{ projPrev.prefix }}{{ projPrev.name }}">
-				<div class="prev-inner">
-					<h5><small>Previous Project:</small></h5>
-					<h4>{{ projPrev.title }}</h4>
-				</div>
-			</a>
-		</div>
-		<div class="half prev-next">
-			<a ng-show="projNext.name" href="#projects/{{ projNext.prefix }}{{ projNext.name }}">
-				<div class="next-inner">
-					<h5><small>Next Project:</small></h5>
-					<h4>{{ projNext.title }}</h4>
-				</div>
-			</a>
+		<div class="wrapper">
+			<div class="half prev-next">
+				<a ng-show="projPrev.name" href="#projects/{{ projPrev.prefix }}{{ projPrev.name }}">
+					<div class="prev-inner">
+						<h5><small>Previous Project:</small></h5>
+						<h4>{{ projPrev.title }}</h4>
+					</div>
+				</a>
+			</div>
+			<div class="half prev-next">
+				<a ng-show="projNext.name" href="#projects/{{ projNext.prefix }}{{ projNext.name }}">
+					<div class="next-inner">
+						<h5><small>Next Project:</small></h5>
+						<h4>{{ projNext.title }}</h4>
+					</div>
+				</a>
+			</div>
 		</div>
 	</div>
 </div>	
