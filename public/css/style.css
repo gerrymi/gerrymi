@@ -209,6 +209,7 @@ img {
   display: block;
   text-align: center;
   overflow: hidden;
+  margin-bottom: 25px;
 }
 .project-inner {
   position: absolute;
@@ -395,6 +396,9 @@ nav, #header, #work, #process, #footer {
 @media (min-width: 960px) {
   body {
     font-size: 24px;
+  }
+  .project {
+    margin-bottom: 0;
   }
   .wrapper {
     padding: 0 100px;
