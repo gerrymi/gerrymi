@@ -109,7 +109,8 @@ var projects = [
   },
 ];
 
-app.controller('projectCtrl',['$scope', '$routeParams', function($scope, $routeParams) {
+app.controller('projectCtrl',['$analytics', '$scope', '$routeParams', function($analytics, $scope, $routeParams) {
+    $analytics.pageTrack('/');
     $scope.projects = projects;
     $scope.proj = "Project Not Found!";
     $scope.currentProj = $routeParams.name;
@@ -121,3 +122,4 @@ app.controller('projectCtrl',['$scope', '$routeParams', function($scope, $routeP
       }
     }
 }]);
+

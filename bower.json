@@ -1,0 +1,20 @@
+{
+  "name": "gerrymi",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gerrymi/gerrymi.com",
+  "authors": [
+    "Gerrymi Bernardo <gerrymibernardo@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angulartics-google-analytics": "~0.1.4"
+  }
+}

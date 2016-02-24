@@ -1,4 +1,4 @@
-var app = angular.module('gerrymi', ['ngRoute']);
+var app = angular.module('gerrymi', ['ngRoute', 'angulartics', 'angulartics.google.analytics']);
 app.config(function($routeProvider){
     $routeProvider.
         when('/', {templateUrl: '/public/ng/views/home.html', controller: 'projectCtrl'}).
