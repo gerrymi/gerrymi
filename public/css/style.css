@@ -203,6 +203,9 @@ img {
   color: #999;
   display: block;
 }
+.hero-description {
+  max-width: 600px;
+}
 /* Projects */
 .project {
   position: relative;
@@ -379,10 +382,6 @@ nav, #header, #work, #process, #footer {
     width: 33.333%;
     float: left;
   }
-  .full-half {
-    width: 50%;
-    float: left;
-  }
   .nav-inner:hover {
     height: 100%;
   }
@@ -470,6 +469,7 @@ nav, #header, #work, #process, #footer {
 .misc {
   margin: 0 0 100px;
   padding: 0 10px;
+  max-width: 800px;
 }
 .misc a {
   color: #c20;
