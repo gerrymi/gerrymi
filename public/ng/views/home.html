@@ -15,7 +15,7 @@
 <div id="work">
 	<div class="row">
 		<div class="third" ng-repeat="project in projects">
-			<a class="project" href="#projects/{{ project.prefix }}{{ project.name }}">
+			<a class="project" href="#projects/{{ project.prefix }}{{ project.name }}" analytics-on="click" analytics-category="From Home">
 				<img ng-src="/public/img/{{ project.name }}/{{ project.name }}_thumb.jpg" alt="">
 				<div class="project-inner">
 					<div class="project-content">

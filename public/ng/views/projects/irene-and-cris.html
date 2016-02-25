@@ -65,7 +65,7 @@
 		</div>
 		<div class="wrapper">
 			<div class="half prev-next">
-				<a ng-show="projPrev.name" href="#projects/{{ projPrev.prefix }}{{ projPrev.name }}">
+				<a ng-show="projPrev.name" href="#projects/{{ projPrev.prefix }}{{ projPrev.name }}" analytics-on="click" analytics-category="Prev-Next">
 					<div class="prev-inner">
 						<h5><small>Previous Project:</small></h5>
 						<h4>{{ projPrev.title }}</h4>
@@ -73,7 +73,7 @@
 				</a>
 			</div>
 			<div class="half prev-next">
-				<a ng-show="projNext.name" href="#projects/{{ projNext.prefix }}{{ projNext.name }}">
+				<a ng-show="projNext.name" href="#projects/{{ projNext.prefix }}{{ projNext.name }}" analytics-on="click" analytics-category="Prev-Next">
 					<div class="next-inner">
 						<h5><small>Next Project:</small></h5>
 						<h4>{{ projNext.title }}</h4>

@@ -20,11 +20,11 @@
 				<div class="third">
 					<div class="nav-inner">
 						<div class="logo">
-							<a href="/index.html">GB</a>
+							<a href="/index.html" analytics-on="click" analytics-category="Home">GB</a>
 						</div>
 						<ul>
 							<li ng-repeat="project in projects">
-								<a href="#projects/{{ project.prefix }}{{ project.name }}" analytics-on="click">{{ project.title }}</a>
+								<a href="#projects/{{ project.prefix }}{{ project.name }}" analytics-on="click" analytics-category="From Menu">{{ project.title }}</a>
 							</li>
 						</ul>
 					</div>
@@ -43,10 +43,10 @@
 					<p class="heading">contact</p>
 				</div>
 				<div class="third-x2">
-					<p class="text">Thank you for visiting! I'd love to know what you think of my work, <a href="mailto:hello@gerrymi.com">say hello!</a> Or check me out on
-					<a href="https://www.linkedin.com/in/gerrymi">LinkedIn</a>,
-					<a href="https://github.com/gerrymi">GitHub</a>,
-					<a href="https://www.instagram.com/gerrymi/">Instagram</a>,
+					<p class="text">Thank you for visiting! I'd love to know what you think of my work, <a href="mailto:hello@gerrymi.com" analytics-on="click">say hello!</a> Or check me out on
+					<a href="https://www.linkedin.com/in/gerrymi" analytics-on="click">LinkedIn</a>,
+					<a href="https://github.com/gerrymi" analytics-on="click">GitHub</a>,
+					<a href="https://www.instagram.com/gerrymi/" analytics-on="click">Instagram</a>,
 					</p>
 				</div>
 			</div>
