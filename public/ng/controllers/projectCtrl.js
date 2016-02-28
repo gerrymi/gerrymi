@@ -109,17 +109,17 @@ var projects = [
   },
 ];
 
-app.controller('projectCtrl',['$analytics', '$scope', '$routeParams', function($analytics, $scope, $routeParams) {
+app.controller('projectCtrl', function($analytics, $scope, $stateParams) {
     $analytics.pageTrack('/');
     $scope.projects = projects;
     $scope.proj = "Project Not Found!";
-    $scope.currentProj = $routeParams.name;
+    $scope.currentProj = $stateParams.name;
     for (var i = 0;i<projects.length;i++) {
-      if ($routeParams.name == projects[i].name) {
+      if ($stateParams.name == projects[i].name) {
         $scope.proj = projects[i];
         $scope.projPrev = projects[i-1];
         $scope.projNext = projects[i+1];
       }
     }
-}]);
+});
 
