@@ -97,22 +97,24 @@ img {
   background-color: #333;
 }
 /* Naviation */
-.main-nav {
+
+/* Left */
+.nav-main {
   position: fixed;
   top: 50px;
   z-index: 5;
 }
-.main-nav .third{
+.nav-left .third{
   width: 60%;
 }
-.nav-inner {
+.nav-left .nav-inner {
   padding: 20px 0;
   height: 25px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.nav-inner ul {
+.nav-left .nav-inner ul {
   position: relative;
   padding: 0;
   margin: 0;
@@ -122,27 +124,27 @@ img {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.nav-inner ul li {
+.nav-left .nav-inner ul li {
   list-style-type: none;
   display: block;
   background-color: #000;
   padding: 10px 20px;
   transition: 0.4s;
 }
-.nav-inner ul li:hover {
+.nav-left .nav-inner ul li:hover {
   background-color: rgba(255,255,255,.8);
   margin-left: 20px;
 }
-.nav-inner ul li a {
+.nav-left .nav-inner ul li a {
   font-family: "league-gothic";
   font-size: 1.2em;
   letter-spacing: .05em;
   color: #fff;
 }
-.nav-inner ul li:hover a {
+.nav-left .nav-inner ul li:hover a {
   color: #333;
 }
-.logo a {
+.nav-left .logo a {
   background-color: #000;
   padding: 20px;
   font-size: 1em;
@@ -152,8 +154,21 @@ img {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.logo:hover a {
+.nav-left .logo:hover a {
   background-color: rgba(255,255,255,.8);
+  color: #333;
+}
+/* Right */
+.nav-right ul {
+  list-style-type: none;
+  margin-right: 25px;
+}
+.nav-right ul li {
+  float: right;
+  margin-left: 25px;
+}
+.nav-right ul li a {
+  font-family: "league-gothic";
   color: #333;
 }
 /* Hero */
@@ -416,6 +431,11 @@ nav, #header, #work, #process, #footer {
   }
   .fourth-x3 {
     width: 75%;
+    float: left;
+  }
+  .x1-third {
+    margin-left: 33.333%;
+    width: 33.333%;
     float: left;
   }
   .third {

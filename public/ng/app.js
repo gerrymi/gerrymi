@@ -21,9 +21,19 @@ app.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: "public/ng/views/project.html",
       controller: 'projectCtrl'
     })
-    .state('', {
-      url: "/projects/g/:name",
-      templateUrl: "public/ng/views/project.html",
+    .state('ui-daily', {
+      url: "/ui-daily",
+      templateUrl: "public/ng/views/ui-daily.html",
+      controller: 'projectCtrl'
+    })
+    .state('ui-daily.ui-component', {
+      url: "/ui-daily/:ui_component",
+      templateUrl: function(params){ return '/public/ng/views/ui-daily/'+params.ui_component+'.html' },
+      controller: 'projectCtrl'
+    })
+    .state('ui-daily.ui-title', {
+      url: "/ui-daily/:ui_component/:ui_title",
+      templateUrl: function(params){ return '/public/ng/views/ui-daily/'+params.ui_component+'/'+params.uititle+'.html' },
       controller: 'projectCtrl'
     })
   $urlRouterProvider.otherwise("/")
