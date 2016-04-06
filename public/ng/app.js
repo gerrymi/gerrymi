@@ -27,13 +27,13 @@ app.config(function($stateProvider, $urlRouterProvider) {
       controller: 'projectCtrl'
     })
     .state('ui-daily.ui-component', {
-      url: "/ui-daily/:ui_component",
-      templateUrl: function(params){ return '/public/ng/views/ui-daily/'+params.ui_component+'.html' },
+      url: "/:ui_component",
+      templateUrl: function(params){ return '/public/ng/views/ui-daily-components/'+params.ui_component+'.html' },
       controller: 'projectCtrl'
     })
     .state('ui-daily.ui-title', {
-      url: "/ui-daily/:ui_component/:ui_title",
-      templateUrl: function(params){ return '/public/ng/views/ui-daily/'+params.ui_component+'/'+params.uititle+'.html' },
+      url: "/:ui_component/:ui_title",
+      templateUrl: function(params){ return '/public/ng/views/ui-daily-components/'+params.ui_component+'/'+params.uititle+'.html' },
       controller: 'projectCtrl'
     })
   $urlRouterProvider.otherwise("/")
